@@ -1,0 +1,46 @@
+{
+  "name": "archive-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "ENV=local nodemon server.js",
+    "lint": "eslint .",
+    "start": "ENV=local node server.js",
+    "test": "jest"
+  },
+  "author": "Darshan",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dsanandiya/archive-app/issues"
+  },
+  "homepage": "https://github.com/dsanandiya/archive-app#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.100.0",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "jszip": "^3.10.0",
+    "knex": "^1.0.5",
+    "morgan": "^1.10.0",
+    "objection": "^3.0.1",
+    "pg": "^8.7.3",
+    "sqs-consumer": "^5.7.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.4.0"
+  }
+}
